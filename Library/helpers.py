@@ -11,7 +11,7 @@ def get_json(msg_dict):
 
 def choose_card(cards, msg):
     while True:
-        val = input("{0} cards:{1} (please enter a number from 0 to {2}): ".format(msg, cards, len(cards) - 1))
+        val = input("{0} -> cards:{1} (please enter a number from 0 to {2}): ".format(msg, cards, len(cards) - 1))
         try:
             val = int(val)
         except ValueError:
